@@ -4,6 +4,7 @@ import java.awt.GridLayout;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.WindowConstants;
 
@@ -21,7 +22,7 @@ public class GridLayoutTest {
         jf.setLocationRelativeTo(null);
 
         // 创建 3 行 3 列 的网格布局
-        GridLayout layout = new GridLayout(3, 3);
+        GridLayout layout = new GridLayout(3, 3); //列数为2时不起作用
 
         // 设置 水平 和 竖直 间隙
 //         layout.setHgap(10);
@@ -42,6 +43,7 @@ public class GridLayoutTest {
         panel.add(btn02);
         panel.add(btn03);
         panel.add(btn04);
+//        panel.add(new JLabel());
         panel.add(btn05);
         panel.add(btn06);
         panel.add(btn07);
