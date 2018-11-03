@@ -21,7 +21,7 @@ import javax.swing.WindowConstants;
 /**
  * https://blog.csdn.net/xietansheng/article/details/78389272
  * @author Victor
- *
+ * 拖拽功能
  */
 public class Test05 {
 

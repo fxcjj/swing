@@ -21,7 +21,7 @@ public class Class1 extends Applet {
 		clazz.init();
 	}
 	public void init() {
-		MyWindow myWndow = new MyWindow();
+		MyWindow1 myWndow = new MyWindow1();
 	}
 }
 
@@ -33,13 +33,13 @@ class MyPanel extends JPanel {
 	}
 }
 
-class MyWindow extends JFrame implements MouseListener {
+class MyWindow1 extends JFrame implements MouseListener {
 	final int maxMarks = 20;
 	int currentMarks = 0, markCount = 0;
 	Point marks[] = new Point[maxMarks];
 	MyPanel panel;
 
-	MyWindow() {
+	MyWindow1() {
 		this.setLocation(100, 100);
 		this.setSize(300, 300);
 		this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
