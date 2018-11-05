@@ -18,7 +18,7 @@ public class CardLayoutTest {
         jf.setSize(300, 200);
 
         // 创建卡片布局，卡片间水平和竖直间隔为 10
-        final CardLayout layout = new CardLayout(10, 10);
+        final CardLayout layout = new CardLayout(50, 10);
 
         // 创建内容面板容器，指定布局管理器
         final JPanel panel = new JPanel(layout);

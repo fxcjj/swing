@@ -15,7 +15,7 @@ import javax.swing.WindowConstants;
  *
  */
 public class JComboBoxTest {
-
+	
 	public static void main(String[] args) {
 		JFrame jf = new JFrame("测试窗口");
         jf.setSize(250, 250);
@@ -23,14 +23,14 @@ public class JComboBoxTest {
         jf.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         JPanel panel = new JPanel();
-
+        
         // 添加一个标签
         JLabel label = new JLabel("水果：");
         panel.add(label);
 
         // 需要选择的条目
         String[] listData = new String[]{"香蕉", "雪梨", "苹果", "荔枝"};
-
+        
         // 创建一个下拉列表框
         final JComboBox<String> comboBox = new JComboBox<String>(listData);
 
@@ -44,13 +44,13 @@ public class JComboBoxTest {
                 }
             }
         });
-
+        
         // 设置默认选中的条目
         comboBox.setSelectedIndex(2);
-
+        
         // 添加到内容面板
         panel.add(comboBox);
-
+        
         jf.setContentPane(panel);
         jf.setVisible(true);
 	}
